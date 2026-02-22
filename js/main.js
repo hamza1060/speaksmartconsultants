@@ -100,16 +100,16 @@ if (statsSection) {
 document.querySelectorAll('.faq-question').forEach(btn => {
   btn.addEventListener('click', () => {
     const faqItem = btn.parentElement;
-    const isActive = faqItem.classList.contains('active');
+    const isOpen = faqItem.classList.contains('open');
 
     // Close all FAQ items
     document.querySelectorAll('.faq-item').forEach(item => {
-      item.classList.remove('active');
+      item.classList.remove('open');
     });
 
     // Open clicked item if it wasn't already open
-    if (!isActive) {
-      faqItem.classList.add('active');
+    if (!isOpen) {
+      faqItem.classList.add('open');
     }
   });
 });

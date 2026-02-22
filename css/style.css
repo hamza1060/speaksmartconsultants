@@ -1222,7 +1222,7 @@ ul { list-style: none; }
   transition: all var(--transition);
 }
 
-.faq-item.active {
+.faq-item.open {
   box-shadow: var(--shadow-sm);
   border-color: var(--blue-bright);
 }
@@ -1253,7 +1253,7 @@ ul { list-style: none; }
   color: var(--orange);
 }
 
-.faq-item.active .faq-icon {
+.faq-item.open .faq-icon {
   transform: rotate(45deg);
 }
 
@@ -1263,7 +1263,7 @@ ul { list-style: none; }
   transition: max-height 0.4s ease, padding 0.3s ease;
 }
 
-.faq-item.active .faq-answer {
+.faq-item.open .faq-answer {
   max-height: 300px;
   padding: 0 1.5rem 1.2rem;
 }
